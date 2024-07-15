@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <TextView
+                android:layout_span="3"
+                android:gravity="center"
+                android:text="Đăng nhập"
+                android:textAllCaps="true"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_marginStart="15dp"
+                android:layout_span="1"
+                android:text="Tài khoản"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_span="2"
+                android:hint="Nhập tên" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_marginStart="15dp"
+                android:layout_span="1"
+                android:text="Mật khẩu"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etMK"
+                android:layout_span="2"
+                android:hint="Nhập mật khẩu" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:gravity="center"
+                android:text="Save"
+                android:layout_span="3"
+                android:layout_marginHorizontal="15dp"
+                android:textAllCaps="true" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
